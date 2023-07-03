@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+
+        <style>
+            .name-input{
+                width: 200px;
+                height: 30px;
+                font-size: 15px;
+                padding: 5px;
+            }
+            .date-input {
+                width: 150px;
+                height: 30px;
+                font-size: 15px;
+                padding: 5px;
+            }
+            .addButton {
+                background-color: rgb(10, 124, 10);
+                border: none;
+                height: 43px;
+                width: 100px;
+                color: white;
+                font-weight:500;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .deleteButton{
+                background-color: rgb(122, 13, 13);
+                border: none;
+                height: 43px;
+                width: 100px;
+                color: white;
+                font-weight:500;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .todo-row {
+                display: grid;
+                grid-template-columns: 200px 150px 100px;
+                margin-top: 12px;
+                align-items: center;
+                gap: 17.5px;
+                font-size: 16px;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Todo List</p>
+        <input class="js-name-input name-input" placeholder="Todo Name" required>
+
+        <input type="date" class="js-due-date-input date-input">
+
+        <button class="addButton" onclick="
+            addTodo();
+        ">Add</button>
+
+        <div class="js-todo">
+            
+        </div>
+
+        <script src="js/12-todo-list.js">
+            
+        </script>
+    </body>
+</html>
